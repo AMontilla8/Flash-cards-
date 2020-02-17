@@ -15,15 +15,27 @@ body {
    grid-gap: 2px 2px;
    border-radius: 111px;
 }
-.card {
+.card:hover {
     float: left;
     width: 20%;
     margin: 5%;
 
 }
 .front {
-    
-
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(400px) rotateY(0deg);
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform .4 linear 0s;
+}
+.back {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(400px) rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    transition: -webkit-transform .4 linear 0s;
 }
 #one {
     background-color: aqua;
